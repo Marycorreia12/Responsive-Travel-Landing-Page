@@ -1,0 +1,26 @@
+$primary-color: #5AE4A8;
+$secondary-color: #F1FFF5;
+$white: #fff;
+$black: #000;
+$font-color: #263238;
+$font-family:'Poppins', sans-serif;
+$border-radius: 10px;
+$font-size: (
+    "X-large": 4rem,//64px
+    "large": 3rem,//48px
+    "medium": 1.5rem,//24px
+    "small": 1.125rem,//18px
+    "x-small": 0.875rem//14px
+);
+
+$font-weights: (
+    "light": 300,
+    "regular": 400,
+    "medium": 500,
+    "semiBold":600,
+    "bold": 700
+);
+
+$desktop: 1024px;
+$tablet: 768px;
+$mobile: 501px;

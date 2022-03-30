@@ -1,0 +1,39 @@
+/* Flex */
+@mixin flexBetween($direction){
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: $direction;
+}
+
+@mixin grid($fr) {
+  display: grid;
+  grid-template-columns: repeat($fr, 1fr);
+  gap: 1rem;
+}
+
+/* Transition */
+@mixin transition {
+    transition: all .5s ease-in-out;
+}
+
+/* Media Queries */
+
+@mixin desktop {
+    @media (max-width: $desktop){
+      @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: $tablet){
+      @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: $mobile){
+      @content;
+    }
+}
