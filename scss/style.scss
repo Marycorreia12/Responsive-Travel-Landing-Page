@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Nunito:wght@200;300;400;600&family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap');
+@import 'variables';
+@import 'reset';
+@import 'functions';
+@import 'header';
+@import 'home';
+@import 'gallery';
+@import 'contact';
+@import 'about';
+@import 'breakpoints';
+
+body{
+    background-color: $secondary-color;
+    font-family: $font-family;
+    outline: none;
+    border: none;
+}
+
+input, textarea{
+    font-family: $font-family;
+	color: $font-color;
+	font-size: 1rem;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+section{
+    min-height: 100vh;
+}
+
+.flex{
+    @include flexBetween(row);
+}
+
+.grid-2{
+    @include grid(2);
+}
+
+.grid-3{
+    @include grid(3);
+
+}
+
+a{
+    text-decoration: none;
+    color: $font-color;
+    font-size: size(small);
+}
+
+ul{
+    list-style: none;
+}
+
+h1{
+    font-size: size(X-large);
+    font-weight: weights(bold);
+    line-height: 96px;
+    color: $font-color;
+    margin-bottom: 1em;
+    width: 427px;
+}
+
+h2{
+    font-size: size(large);
+    font-weight: weights(bold);
+    line-height: 72px;
+    color: $font-color;
+}
+
+h3{
+    font-weight: weights(medium);
+    font-size: size(medium);
+    line-height: 36px;
+}
+
+p{
+    font-size: size(small);
+    font-weight: weights(regular);
+    line-height: 27px;
+}
+
+.button{
+    display: inline-block;
+    max-width: 191px;
+    line-height: 24px;
+    background-color: $primary-color;
+    color: $white;
+    font-size: 1rem;
+    padding: 1.1875em 1.625em 1.0625em 1.75em;
+    font-weight: weights(medium);
+    box-shadow: 0 16px 40px rgba(90, 228, 168, 0.24);
+    border-radius: $border-radius;  
+    border: 0;
+    outline: 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#footer{
+    p{
+        text-align: center;
+        padding-bottom: 3.125em;
+    }
+}
