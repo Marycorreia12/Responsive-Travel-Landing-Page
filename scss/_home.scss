@@ -1,0 +1,76 @@
+/* Home */
+
+#home{
+    .content{
+        flex: 1 1 300px;
+
+        p{
+            font-size: size(small);
+            line-height: 1.68rem;
+            margin-bottom: 2.125em;
+        }
+        .cards-container{      
+            width: 400px;
+            .cards{
+                overflow: hidden;
+                width: 115px;
+                height: 115px;
+                background-color: $white;
+                border-radius: $border-radius;
+                box-shadow: 0px 40px 40px rgba(90, 228, 168, 0.06);
+                @include transition;
+                position: relative;
+
+                img{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: 20;
+
+                    &.eclipse{
+                        background-color: #85EABF;
+                        z-index: 1;
+                        border-radius: 50%;
+                    }
+                  
+                }
+
+                .place{
+                    position: absolute;
+                    color: $primary-color;
+                    font-size: .75rem;
+                    line-height: 18px;
+                    font-weight: weights(regular);
+                    top: 80%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+
+                &:hover{
+                    transform: scale(1.2);
+                    @include transition;
+                }
+                &.card-1{
+                    background-color: $primary-color;
+
+                    .place{
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+
+    .image{
+        flex: 1 1 300px;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+        }
+        
+    }
+}
