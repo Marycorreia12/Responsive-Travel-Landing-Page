@@ -1,0 +1,95 @@
+
+#about{
+    position: relative;
+    .content{
+        h2{
+            margin-top: 3.75rem;
+            width: 364px;
+        } 
+    }
+
+    .boxes{
+        margin-bottom: 100px;
+        .box{
+            flex: 1 1 500px;
+            min-height: 471px;
+
+            .image{
+                display: inline-block;
+                border-radius: 15px;
+                margin: 54px 0 46px 0;
+                cursor: pointer;
+            }
+            .content{
+                p{
+                    margin: 9px 0 20px 0;
+                }
+
+                .place{
+                    color: #BFBFBF;
+                    font-weight: weigth(regular);
+                    font-size: size(x-small);
+                    
+                    i{
+                        margin-right: 14px;
+                        font-size: 18px;
+                    }
+                }
+
+                .rating{
+                    float: right;
+                    margin-right: 6rem;
+                    font-weight: 500;
+                    font-size: 14px;
+                    display: inline-flex;
+                    gap: 7px;
+                    color: #F3AD43;
+                }
+            }
+        }
+    }
+
+    .buttons{
+        position: absolute;
+        bottom: -20px;
+        right: 0;
+        display: flex;
+        gap: 20px;
+        cursor: pointer;
+
+        .prev{
+            width: 89px;
+            height: 60px;
+            background-color: $primary-color;
+            box-shadow: 0px 16px 40px rgba(90, 228, 168, 0.24);
+            border-radius: 10px;
+            position: relative;
+
+            .left{
+                color: #fff;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        .next{
+            width: 89px;
+            height: 60px;
+            background: #FFFFFF;
+            box-shadow: 0px 16px 40px rgba(90, 228, 168, 0.24);
+            border-radius: 10px;
+            position: relative;
+
+            .right{
+                color: $primary-color;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+
+}
