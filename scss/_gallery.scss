@@ -1,0 +1,67 @@
+@import 'mixins';
+#gallery{
+    .boxes{
+        flex: 2;
+        position: relative;
+        margin-bottom: 3em;
+
+        .box{
+            min-height: 404px;
+
+            .image{
+                width: 289px;
+                height: 312px;
+                border-radius: 15px;
+            }
+
+            h3{
+                margin: 1.625em 0 0.563em 0;
+            }
+            p{
+                font-size: size(x-small);
+                line-height: 21px;
+            }
+        }
+
+        .circles{
+            position: absolute;
+            content: '';
+            display: inline-flex;
+            bottom: -30px;
+            right: 350px;
+            margin-top: 1em;
+
+            .circle{
+                width: 14px;
+                height: 14px;
+                background: #DCDCDC;
+                border-radius: 7px;
+                margin: 0 0.375em;
+
+                &:hover{
+                    background-color: $primary-color;
+                    @include transition;
+                }
+            }
+
+            .rect{
+                width: 40px;
+                height: 14px;
+                background: #5AE4A8;
+                border-radius: 7px;
+                margin: 0 0.375em;            
+            }
+        }
+    }
+
+    .content{
+        flex: 1;
+        margin-bottom: 6.25em;
+
+        p{
+            margin-bottom: 4em;
+            width: 300px;
+        }
+    }
+     
+}
