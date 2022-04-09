@@ -644,6 +644,9 @@
     font-size: 1.125rem;
     line-height: 36px;
   }
+  #contact .contact-info {
+    margin: 0;
+  }
   #contact .contact-info .adress {
     margin-bottom: 12px;
   }
