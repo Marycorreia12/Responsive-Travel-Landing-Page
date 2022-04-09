@@ -7,12 +7,12 @@
     flex-direction: $direction;
 }
 
-@mixin grid($fr) {
+@mixin grid() {
   display: grid;
-  grid-template-columns: repeat($fr, 1fr);
+  grid-template-columns: repeat(auto-fit, 300px);
+  
   gap: 1rem;
 }
-
 /* Transition */
 @mixin transition {
     transition: all .5s ease-in-out;

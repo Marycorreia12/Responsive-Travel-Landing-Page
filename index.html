@@ -5,35 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"/>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./dist/css/style.css">
     <title>Travel Landing Page</title>
 </head>
 <body>
 
-    <header id="header">
+    <header id="header" class="container flex">
         <div class="logo">
             <a href="#">Dolan<span>kuy...</span></a>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
+        <nav class="navbar">
+            <ul class="flex">
+                <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#about">About us</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <div class="fa-solid fa-bars"></div>
     </header>
 
     <main>
-        <section id="home">
+        <section id="home" class="container flex">
             <div class="content">
                 <h1 class="title">Where you 
                     destination ? </h1>
                 <p>Your choice, visit to this one maybe you like</p>
-                <div class="cards">
-                    <img src="./img/card-sm-beach.png" alt="Card-beach">
-                    <img src="./img/card-sm-forest.png" alt="Card-forest">
-                    <img src="./img/card-sm-mountain.png" alt="Card-mountain">
+                <div class="cards-container flex">
+                    <div class="cards card-1">
+                        <img src="./img/Group.png" alt="Card-forest">
+                        <img src="./img/Ellipse 1.png" alt="" class="eclipse">
+                        <p class="place">Beach</p>
+
+                    </div>
+                    <div class="cards card-2">
+                        <img src="./img/Group1.png" alt="Card-forest">
+                        <img src="./img/Ellipse 1.png" alt="">
+                        <p class="place">Forest</p>
+                    </div>
+                    <div class="cards card-3">
+                        <img src="./img/Vector.png" alt="Card-forest">
+                        <img src="./img/Ellipse 1.png" alt="">
+                        <p class="place">Mountain</p>
+                    </div>  
                 </div>
             </div>
             <div class="image">
@@ -41,32 +55,43 @@
             </div>
         </section>
 
-        <section id="gallery">
-            <div class="boxes">
+        <section id="gallery" class="container flex">
+            <div class="boxes grid">
                 <div class="box">
-                    <img src="./img/Bali.png" alt="Bali">
+                    <div class="image">
+                        <img src="./img/Bali.png" alt="Bali">
+                    </div>
                     <h3>Indonesia, Bali</h3>
                     <p>196 place visit</p>
                 </div>
                 <div class="box">
-                    <img src="./img/Lombok.png" alt="Bali">
-                    <h3>Indonesia, Bali</h3>
-                    <p>196 place visit</p>
+                    <div class="image">
+                        <img src="./img/Lombok.png" alt="Bali">
+                    </div>
+                    <h3>Indonesia, Lombok</h3>
+                    <p>186 place visit</p>
+                </div>
+                <div class="circles">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="rect"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
                 </div>
             </div>
             <div class="content">
                 <h2>Popular destination</h2>
                 <p>most visited and cheap tourist spots</p>
-                <a href="#">More Destination</a>
+                <a class="button" href="#">More Destination</a>
             </div>
         </section>
 
-        <section id="about">
+        <section id="about" class="container">
             <div class="content">
                 <h2>Special for you</h2>
                 <p>offers for your vacation</p>
             </div>
-            <div class="boxes">
+            <div class="boxes grid">
                 <div class="box">
                     <div class="image">
                         <img src="./img/surf.png" alt="Surf">
@@ -74,7 +99,7 @@
                     <div class="content">
                         <h3>surfing on the beach</h3>
                         <p>$340/person</p>
-                        <span class="place">Bali</span>
+                        <span class="place"><i class="fa-solid fa-location-dot"></i>Bali</span>
                         <span class="rating"><img src="./img/star.png" alt="star">4.3</span>
                     </div>
                 </div>
@@ -85,7 +110,7 @@
                     <div class="content">
                         <h3>diving in the coral reef..</h3>
                         <p>$690/person</p>
-                        <span class="place">Lampung</span>
+                        <span class="place"><i class="fa-solid fa-location-dot"></i>Lampung</span>
                         <span class="rating"><img src="./img/star.png" alt="star">4.3</span>
                     </div>
                 </div>
@@ -96,38 +121,38 @@
                     <div class="content">
                         <h3>rock climbing</h3>
                         <p>$440/person</p>
-                        <span class="place">Popua</span>
+                        <span class="place"><i class="fa-solid fa-location-dot"></i>Popua</span>
                         <span class="rating"><img src="./img/star.png" alt="star">4.3</span>
                     </div>
                 </div>
-                <div class="buttons">
-                    <div class="prev">
-                        <i class="fa-solid fa-arrow-left"></i>
-                    </div>
-                    <div class="next">
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </div>
+            </div>
+            <div class="buttons">
+                <div class="prev">
+                    <i class="fa-solid fa-arrow-left left"></i>
+                </div>
+                <div class="next">
+                    <i class="fa-solid fa-arrow-right right"></i>
                 </div>
             </div>
         </section>
 
-        <section id="contact">
+        <section id="contact" class="container">
             <div class="company-info">
                 <div class="logo">
                     <a href="#">Dolan<span>kuy...</span></a>
-                    <div class="social-icons">
+                </div>
+                <div class="social-icons">
                         <i class="fa-brands fa-facebook-square"></i>
                         <i class="fa-brands fa-instagram-square"></i>
                         <i class="fa-brands fa-whatsapp-square"></i>
                         <i class="fa-brands fa-youtube-square"></i>
-                    </div>
                 </div> 
             </div>
             <div class="contact-info">
                 <h3>Contact info</h3>
                 <div class="adress">
                     <i class="fa-solid fa-location-dot"></i>
-                    <span>Avenida São José</span>
+                    <span>Avenida São José, Lisboa</span>
                 </div>
                 <div class="phone">
                     <i class="fa-solid fa-phone"></i>
@@ -143,8 +168,8 @@
                 <form action="submit">
                     <input type="text" placeholder="Your name">
                     <input type="email" placeholder="Your Email">
-                    <textarea cols="40" rows="10" placeholder="Your message"></textarea>
-                    <button type="submit">Send</button>
+                    <textarea cols="40" rows="4" placeholder="Your message"></textarea>
+                    <button type="submit" class="button">Send</button>
                 </form>
             </div>
         </section>
@@ -152,5 +177,7 @@
     <footer id="footer">
         <p>Copyright © 2022 DolanKuy. All rights reserved</p>
     </footer>
+
+    <script src="./js/index.js"></script>
 </body>
 </html>
