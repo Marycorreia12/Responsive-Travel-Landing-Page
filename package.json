@@ -1,0 +1,17 @@
+{
+  "name": "TravelLandingPage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css",
+    "watch": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marycorreia12/Responsive-Travel-Landing-Page.git"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.2.1"
+  }
+}
