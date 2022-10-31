@@ -1,6 +1,9 @@
 # Responsive-Travel-Landing-Page
 https://travelandingpage.netlify.app/
 
+## Version with TailwindCSS
+https://marycorreia12.github.io/Responsive-Travel-Landing-Page/
+
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/Marycorreia12/assets/blob/main/LICENSE)
 
 Design retirado do figma e implementado usando as linguagens html, css e javascript.
